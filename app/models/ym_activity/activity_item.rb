@@ -6,4 +6,6 @@ class YmActivity::ActivityItem < ActiveRecord::Base
   
   validate :user, :resource, :presence => true
   
+  default_scope order("created_at DESC")
+  
 end
