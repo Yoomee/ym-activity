@@ -1,15 +1,15 @@
 module YmActivity::UserExt
   
   def self.included(base)
-    base.has_many :activity_items, :class_name => "YmActivity::ActivityItem", :dependent => :destroy
+    base.has_many :activity_items, :dependent => :destroy
   end
   
-  def destroy_activity!(resource)
-    activity_items.where(:resource_type => resource.class.to_s, :resource_id => resource.id).destroy_all
-  end
-  
-  def record_activity!(resource, options = {})
-    activity_items.create(options.merge(:resource => resource))
+  def record_activity!(resource_or_string, options = {})
+    if resource_or_string.is_a?(String)
+      activity_items.create(options.merge(:text => resource_or_string))
+    else
+      activity_items.create(options.merge(:resource => resource_or_string))
+    end
   end
   
 end

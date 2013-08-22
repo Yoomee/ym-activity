@@ -5,6 +5,7 @@ class CreateActivityItems < ActiveRecord::Migration
       t.belongs_to :user
       t.belongs_to :resource, :polymorphic => true
       t.belongs_to :parent_resource, :polymorphic => true
+      t.string :text
       t.datetime :created_at
     end
     add_index :activity_items, :user_id
