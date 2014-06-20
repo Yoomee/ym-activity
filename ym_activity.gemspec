@@ -13,11 +13,11 @@ Gem::Specification.new do |s|
   s.summary     = "Summary of YmActivity."
   s.description = "Description of YmActivity."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency 'ym_core', "~> 1.0"
-  s.add_dependency "ym_users", "~> 1.0"
+  s.add_dependency "ym_users", "~> 1.1.1"
 
   # for testing
   s.add_development_dependency "sqlite3"

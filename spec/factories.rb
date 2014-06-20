@@ -9,4 +9,8 @@ FactoryGirl.define do
     name 'A resource'
   end
 
+  factory :user do
+    email 'test@yoomee.com'
+  end
+  
 end

@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(:version => 20120518152030) do
     t.string   "resource_type"
     t.integer  "parent_resource_id"
     t.string   "parent_resource_type"
-    t.string   "action",               :default => "create"
     t.datetime "created_at"
   end
 
@@ -45,8 +44,8 @@ ActiveRecord::Schema.define(:version => 20120518152030) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.string   "image_uid"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
     t.string   "role"
     t.text     "bio"
   end
