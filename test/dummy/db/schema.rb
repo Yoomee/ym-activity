@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120518152030) do
+ActiveRecord::Schema.define(:version => 20140620141913) do
 
   create_table "activity_items", :force => true do |t|
     t.integer  "user_id"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20120518152030) do
     t.integer  "parent_resource_id"
     t.string   "parent_resource_type"
     t.datetime "created_at"
+    t.string   "text"
   end
 
   add_index "activity_items", ["parent_resource_type", "parent_resource_id"], :name => "parent_resource_index"
