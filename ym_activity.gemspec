@@ -7,28 +7,20 @@ require "ym_activity/version"
 Gem::Specification.new do |s|
   s.name        = "ym_activity"
   s.version     = YmActivity::VERSION
-  s.authors     = ["Matt Atkins", "Ian Mooney", "Edward Andrews"]
-  s.email       = ["matt@yoomee.com", "ian@yoomee.com", "edward@yoomee.com"]
+  s.authors     = ["Matt Atkins", "Ian Mooney", "Edward Andrews", "David Thompson"]
+  s.email       = ["matt@yoomee.com", "ian@yoomee.com", "edward@yoomee.com", "david@yoomee.com"]
   s.homepage    = "http://www.yoomee.com"
   s.summary     = "Summary of YmActivity."
   s.description = "Description of YmActivity."
+  s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency 'ym_core', "~> 1.0"
-  s.add_dependency "ym_users", "~> 1.1.1"
+  # s.add_dependency 'ym_core'
+  # s.add_dependency "ym_users"
 
-  # for testing
+  # s.add_development_dependency "ym_test"
   s.add_development_dependency "sqlite3"
-  s.add_development_dependency "rspec-rails"
-  s.add_development_dependency "factory_girl_rails"
-  s.add_development_dependency 'shoulda-matchers'
-  s.add_development_dependency 'capybara-webkit'
-  s.add_development_dependency 'database_cleaner'
-  s.add_development_dependency 'capybara', '~> 2.2.0'
-  s.add_development_dependency "guard-rspec"
-  s.add_development_dependency "ym_tools"
-  s.add_development_dependency 'geminabox'
 
 end
