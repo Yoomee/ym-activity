@@ -1,16 +1,16 @@
 FactoryGirl.define do
 
-  factory :activity_item, :class => 'YmActivity::ActivityItem' do
-    association :user
-    association :resource
-  end
-
   factory :resource do
     name 'A resource'
   end
 
   factory :user do
-    email 'test@yoomee.com'
+    sequence(:email){|n| "test#{n}@yoomee.com" }
   end
-  
+
+  factory :activity_item do
+    association :user
+    association :resource
+  end
+
 end
