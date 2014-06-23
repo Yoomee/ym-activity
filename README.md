@@ -4,7 +4,7 @@ This project rocks and uses MIT-LICENSE.
 
 ## Usage
 
-Given a class
+Given a User class:
 
 ```
 class User < ActiveRecord::Base
@@ -13,7 +13,7 @@ end
 
 ```
 
-Run the generator with:
+Run the generator with: ```rails generate ym_activity:install```
 
 ```
 rake db:migrate
