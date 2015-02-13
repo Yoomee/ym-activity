@@ -4,7 +4,7 @@ module YmActivity::ActivityItem
     base.belongs_to :user
     base.belongs_to :resource, :polymorphic => true
     base.belongs_to :parent_resource, :polymorphic => true
-    base.validate :user, :presence => true
+    base.validates :user, :presence => true
     base.send(:extend, ClassMethods)
   end
   
