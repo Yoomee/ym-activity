@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   # s.add_dependency 'ym_core'
-  # s.add_dependency "ym_users"
 
   # s.add_development_dependency "ym_test"
   s.add_development_dependency "sqlite3"

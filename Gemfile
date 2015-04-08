@@ -12,7 +12,6 @@ gemspec
 # your gem to rubygems.org.
 
 gem 'ym_core', :git => 'git@gitlab.yoomee.com:yoomee/ym_core.git', :branch => 'rails-4'
-gem 'ym_users', :git => 'git@gitlab.yoomee.com:yoomee/ym_users.git', :branch => 'rails-4'
 
 group :test do
   gem 'ym_test', :git => 'git@gitlab.yoomee.com:yoomee/ym_test.git'
