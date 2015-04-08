@@ -1,4 +1,3 @@
-require 'ym_core'
 require "ym_activity/engine"
 
 module YmActivity

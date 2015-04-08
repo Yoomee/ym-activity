@@ -11,8 +11,6 @@ gemspec
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 
-gem 'ym_core', :git => 'git@gitlab.yoomee.com:yoomee/ym_core.git', :branch => 'rails-4'
-
 group :test do
   gem 'ym_test', :git => 'git@gitlab.yoomee.com:yoomee/ym_test.git'
 end
